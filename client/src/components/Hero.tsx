@@ -17,7 +17,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Full Stack Developer
+              Frontend Developer
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               I create beautiful and functional web applications with modern technologies.
@@ -39,8 +39,7 @@ export default function Hero() {
             className="relative aspect-square"
           >
             <img
-              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf"
-              alt="Professional headshot"
+              src="https://s7.ezgif.com/tmp/ezgif-79d85f0e5a504.jpg"
               className="rounded-full object-cover w-full h-full"
             />
           </motion.div>
