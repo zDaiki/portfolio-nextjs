@@ -40,7 +40,7 @@ export default function Hero() {
           >
             <img
               src="https://s7.ezgif.com/tmp/ezgif-7ba0621bb3b7a.jpg"
-              className="rounded-full object-cover mt-6 w-4/5 h-4/5"
+              className="rounded-full object-cover ml-6 mt-6 w-4/5 h-4/5"
             />
           </motion.div>
         </div>

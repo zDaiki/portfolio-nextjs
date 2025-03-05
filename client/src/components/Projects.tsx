@@ -9,21 +9,21 @@ export default function Projects() {
       title: "To-Do App",
       description: "A dynamic task management app leveraging React hooks (useState, useEffect) for seamless state management.",
       image: "https://s4.ezgif.com/tmp/ezgif-432a501bce223.png",
-      demo: "https://loquacious-banoffee-a490b3.netlify.app/",
+      demo: "https://daiki-todo-app.netlify.app/",
       github: "https://github.com/zDaiki/todo-app-react"
     },
     {
       title: "E-commerce Product Catalog",
       description: "An interactive product browsing system with real-time cart updates and responsive UI.",
       image: "https://s4.ezgif.com/tmp/ezgif-4f57d31aa81f5.png",
-      demo: "https://stupendous-frangollo-77e509.netlify.app/",
+      demo: "https://daiki-product-catalog.netlify.app/",
       github: "https://github.com/zDaiki/product-catalog-react"
     },
     {
       title: "React Weather App",
       description: "Integrated an external API to fetch real-time weather data, enhancing user experience with modern UI/UX design.",
       image: "https://s4.ezgif.com/tmp/ezgif-43ff68042fabd.png",
-      demo: "https://melodious-chebakia-cfaa4c.netlify.app/",
+      demo: "https://daiki-weather-app.netlify.app/",
       github: "https://github.com/zDaiki/weather-app-react"
     }
   ];
