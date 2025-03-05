@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import MyImage from "@/assets/daiki.jpg"; // Adjust path as necessary
+
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -39,7 +41,7 @@ export default function Hero() {
             className="relative aspect-square"
           >
             <img
-              src="https://s7.ezgif.com/tmp/ezgif-7ba0621bb3b7a.jpg"
+              src={MyImage}
               className="rounded-full object-cover ml-6 mt-6 w-4/5 h-4/5"
             />
           </motion.div>
