@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import logo from "@/assets/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#" className="text-xl font-bold">
-        DaikiVerse
+        <img src={logo} alt="DaikiVerse Logo" className="h-10 ml-12" />
         </a>
 
         {/* Desktop Navigation */}

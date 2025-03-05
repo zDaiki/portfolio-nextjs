@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Instagram } from "lucide-react";
 import MyImage from "@/assets/daiki.jpg"; // Adjust path as necessary
+
 
 
 export default function Hero() {
@@ -17,6 +18,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="relative aspect-square order-2 md:order-1 mx-auto md:ml-6 md:mt-36"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Frontend Developer
@@ -28,10 +30,50 @@ export default function Hero() {
               <Button onClick={scrollToProjects} size="lg">
                 View My Work
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              {/* <Button variant="outline" size="lg" asChild>
                 <a href="#contact">Contact Me</a>
+              </Button> */}
+              <Button
+                size="lg"
+                asChild
+                className="bg-primary hover:bg-primary/90"
+              >
+                <a href="/bishal--Resume.pdf" download="bishalResume.pdf">
+                  Download Resume
+                </a>
               </Button>
             </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="flex gap-4 mt-8"
+            >
+              <a
+                href="https://github.com/zDaiki"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/bishal-maharjan-376b11300/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://www.instagram.com/bishal__maharjan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
+              </a>
+            </motion.div>
           </motion.div>
 
           <motion.div
@@ -42,7 +84,7 @@ export default function Hero() {
           >
             <img
               src={MyImage}
-              className="rounded-full object-cover ml-6 mt-6 w-4/5 h-4/5"
+              className="rounded-full object-cover ml-11 mt-6 w-4/5 h-4/5 border-4 border-white/30 lg:ml-24"
             />
           </motion.div>
         </div>

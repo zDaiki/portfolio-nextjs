@@ -6,8 +6,9 @@ import {
   SiMysql, 
   SiJavascript, 
   SiTailwindcss, 
-  SiHtml5, 
-  SiGit 
+  SiHtml5,
+  SiGit, 
+  SiCss3 
 } from "react-icons/si";
 
 export default function Skills() {
@@ -19,6 +20,7 @@ export default function Skills() {
     { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
     { icon: SiHtml5, name: "HTML", color: "#E34F26" },
     { icon: SiGit, name: "Git", color: "#F05032" },
+    { icon: SiCss3, name: "CSS", color: "#1572B6" },
   ];
 
   return (
