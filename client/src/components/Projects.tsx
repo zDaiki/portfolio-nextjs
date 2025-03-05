@@ -6,32 +6,25 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "Project Management App",
-      description: "A full-stack application for managing projects and tasks",
-      image: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8",
-      demo: "#",
-      github: "#"
+      title: "To-Do App",
+      description: "A dynamic task management app leveraging React hooks (useState, useEffect) for seamless state management.",
+      image: "https://s4.ezgif.com/tmp/ezgif-432a501bce223.png",
+      demo: "https://loquacious-banoffee-a490b3.netlify.app/",
+      github: "https://github.com/zDaiki/todo-app-react"
     },
     {
-      title: "E-commerce Platform",
-      description: "Modern e-commerce solution with real-time inventory",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
-      demo: "#",
-      github: "#"
+      title: "E-commerce Product Catalog",
+      description: "An interactive product browsing system with real-time cart updates and responsive UI.",
+      image: "https://s4.ezgif.com/tmp/ezgif-4f57d31aa81f5.png",
+      demo: "https://stupendous-frangollo-77e509.netlify.app/",
+      github: "https://github.com/zDaiki/product-catalog-react"
     },
     {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management",
-      image: "https://images.unsplash.com/photo-1739514984003-330f7c1d2007",
-      demo: "#",
-      github: "#"
-    },
-    {
-      title: "Fitness Tracking App",
-      description: "Mobile-first app for tracking workouts and progress",
-      image: "https://images.unsplash.com/photo-1510759395231-72b17d622279",
-      demo: "#",
-      github: "#"
+      title: "React Weather App",
+      description: "Integrated an external API to fetch real-time weather data, enhancing user experience with modern UI/UX design.",
+      image: "https://s4.ezgif.com/tmp/ezgif-43ff68042fabd.png",
+      demo: "https://melodious-chebakia-cfaa4c.netlify.app/",
+      github: "https://github.com/zDaiki/weather-app-react"
     }
   ];
 

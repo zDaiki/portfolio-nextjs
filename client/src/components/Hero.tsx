@@ -39,8 +39,8 @@ export default function Hero() {
             className="relative aspect-square"
           >
             <img
-              src="https://s7.ezgif.com/tmp/ezgif-79d85f0e5a504.jpg"
-              className="rounded-full object-cover w-full h-full"
+              src="https://s7.ezgif.com/tmp/ezgif-7ba0621bb3b7a.jpg"
+              className="rounded-full object-cover mt-6 w-4/5 h-4/5"
             />
           </motion.div>
         </div>

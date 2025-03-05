@@ -1,13 +1,24 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiReact, SiNodedotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { 
+  SiReact, 
+  SiPhp, 
+  SiMysql, 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiHtml5, 
+  SiGit 
+} from "react-icons/si";
 
 export default function Skills() {
   const skills = [
     { icon: SiReact, name: "React", color: "#61DAFB" },
-    { icon: SiNodedotjs, name: "Node.js", color: "#339933" },
-    { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+    { icon: SiPhp, name: "PHP", color: "#777BB4" },
+    { icon: SiMysql, name: "SQL", color: "#4479A1" },
+    { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
     { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
+    { icon: SiHtml5, name: "HTML", color: "#E34F26" },
+    { icon: SiGit, name: "Git", color: "#F05032" },
   ];
 
   return (
@@ -21,7 +32,7 @@ export default function Skills() {
         >
           <h2 className="text-3xl font-bold mb-12 text-center">Skills</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
