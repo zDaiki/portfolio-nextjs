@@ -84,7 +84,7 @@ export default function Hero() {
           >
             <img
               src={MyImage}
-              className="rounded-full object-cover ml-11 mt-6 w-4/5 h-4/5 border-4 border-white/30 lg:ml-24"
+              className="rounded-full object-cover ml-9 mt-6 w-4/5 h-4/5 border-4 border-white/30 lg:ml-24"
             />
           </motion.div>
         </div>
