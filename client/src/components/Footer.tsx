@@ -1,10 +1,10 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Github, href: "https://github.com/zDaiki", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/bishal-maharjan-376b11300/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/bishal__maharjan/", label: "Instagram" },
   ];
 
   return (
@@ -24,6 +24,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label={social.label}
+                title={social.label}
               >
                 <social.icon className="w-5 h-5" />
               </a>
