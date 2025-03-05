@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import todo from "@/assets/todo.png";
 import weather from "@/assets/weather.png";
 import productImage from "@/assets/product.png";
-
+import bookstore from "@/assets/bookstore.png";
 
 export default function Projects() {
   const projects = [
@@ -29,6 +29,13 @@ export default function Projects() {
       image: weather,
       demo: "https://daiki-weather-app.netlify.app/",
       github: "https://github.com/zDaiki/weather-app-react"
+    },
+    {
+      title: "Book Recommendation System",
+      description: "Integrated an external API to fetch real-time weather data, enhancing user experience with modern UI/UX design.",
+      image: bookstore,
+      demo: "#",
+      github: "https://github.com/zDaiki/Book-recommendation-system"
     }
   ];
 
@@ -43,7 +50,7 @@ export default function Projects() {
         >
           <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -52,28 +59,28 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Card className="overflow-hidden">
+                <Card className="overflow-hidden shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                   <div className="aspect-video relative">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-75"
                     />
                   </div>
-                  <CardHeader>
+                  <CardHeader className=" text-white">
                     <CardTitle>{project.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <CardContent className="text-gray-700">
+                    <p className="mb-4">{project.description}</p>
                     <div className="flex gap-4">
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" asChild title="View Live Demo">
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="View Live Demo">
                           <ExternalLink className="w-4 h-4 mr-2" />
                           Live Demo
                         </a>
                       </Button>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" asChild title="View Code on GitHub">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="View Code on GitHub">
                           <Github className="w-4 h-4 mr-2" />
                           Code
                         </a>
