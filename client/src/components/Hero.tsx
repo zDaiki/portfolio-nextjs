@@ -20,11 +20,12 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="relative aspect-square order-2 md:order-1 mx-auto md:ml-6 md:mt-36"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
               Frontend Developer
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              I create beautiful and functional web applications with modern technologies.
+            Hi, I'm Bishal Maharjan
+            , a Computer Science and IT student currently learning web development. Passionate about technology and problem-solving, I'm always eager to expand my skills and build meaningful projects.
             </p>
             <div className="flex gap-4">
               <Button onClick={scrollToProjects} size="lg">
