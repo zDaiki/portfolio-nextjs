@@ -6,6 +6,7 @@ import todo from "@/assets/todo.png";
 import weather from "@/assets/weather.png";
 import productImage from "@/assets/product.png";
 import bookstore from "@/assets/bookstore.png";
+import movie from "@/assets/Movie.png";
 
 export default function Projects() {
   const projects = [
@@ -36,6 +37,13 @@ export default function Projects() {
       image: bookstore,
       demo: "#",
       github: "https://github.com/zDaiki/Book-recommendation-system"
+    },
+    {
+      title: "Movie Website",
+      description: "DaikiMovies is a movie discovery platform built with React and Tailwind CSS, offering a smooth, user-friendly experience. From new releases to top-rated films and hidden gems, find everything in one place!",
+      image: movie,
+      demo: "https://daikimovies.netlify.app/",
+      github: "https://github.com/zDaiki/Movie-website"
     }
   ];
 
